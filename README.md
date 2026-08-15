@@ -1,131 +1,76 @@
 # Drishti Foundation
 
-Drishti Foundation is a modern storytelling and impact-driven website concept inspired by global philanthropic and research organizations.
-The goal of this project is to present ideas, initiatives, stories, and people working toward meaningful change through a clean editorial-style interface.
+A modern React website for a social-impact foundation focused on education, awareness, community participation, opportunities, events, publications, and meaningful engagement.
 
-This project is built as a fully functional frontend website and deployed using GitHub Pages.
+![Drishti Foundation Preview](./preview.png)
 
----
+## Features
 
-## Project Overview
-
-Drishti means "vision" in Sanskrit. The project represents a platform for sharing forward-thinking ideas, initiatives, and narratives that focus on progress, innovation, and social impact.
-
-The website follows a minimal, cinematic, and editorial design approach similar to modern storytelling platforms used by global foundations and research institutions.
-
----
-
-## Key Features
-
-- Fully functional frontend website
-- Modern editorial layout
-- Smooth navigation between pages
-- Interactive content sections
-- Responsive design for desktop and mobile
-- Lightweight and fast performance
+- Responsive React + Vite website
+- Styled Components UI
+- Active header and drawer navigation
+- Nested route highlighting
+- Articles and detail pages
+- Events and detail pages
+- Publications and issue pages
+- Opportunities and detail pages
+- Legal pages
+- Custom 404 page
+- Auto scroll to top on route change
+- Floating Go To Top button
 - GitHub Pages deployment support
-- Clean and maintainable project structure
 
----
-
-## Technology Stack
+## Tech Stack
 
 - React
 - Vite
+- JavaScript
+- React Router DOM
 - styled-components
-- react-icons
-- GitHub Pages
+- Material UI
+- React Icons
 
----
+## Run Locally
 
-## Installation
-
-Clone the repository:
-
-```
+```bash
 git clone https://github.com/a2rp/drishti-foundation.git
-```
-
-Navigate into the project:
-
-```
 cd drishti-foundation
-```
-
-Install dependencies:
-
-```
 npm install
-```
-
-Run the development server:
-
-```
 npm run dev
 ```
 
----
+## Production Build
 
-## Build
-
-Create a production build:
-
-```
+```bash
 npm run build
 ```
 
-Preview the build locally:
+## Deploy
 
-```
-npm run preview
-```
-
----
-
-## Deployment
-
-This project is configured for GitHub Pages deployment.
-
-```
+```bash
 npm run deploy
 ```
 
-After deployment the website will be available at:
+## Developer
 
-```
-https://a2rp.github.io/drishti-foundation/
-```
+**Ashish Ranjan**
 
----
+- Portfolio: https://www.ashishranjan.net
+- GitHub: https://github.com/a2rp
+- LinkedIn: https://www.linkedin.com/in/aashishranjan
+- CodePen: https://codepen.io/ash1198
+- Facebook: https://www.facebook.com/theash.ashish/
+- YouTube: https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1
+- Email: mailto:ash.ranjan09@gmail.com
 
-## Design Philosophy
+## Support
 
-The interface is inspired by editorial storytelling platforms that combine large visual elements with thoughtful typography and generous spacing.
+- Support: https://a2rp-donation-page.netlify.app/
+- Buy Me A Coffee: https://buymeacoffee.com/a2rp
+- Patreon: https://patreon.com/a2rp
 
-The design focuses on:
+## License
 
-- clarity
-- minimalism
-- visual storytelling
-- readable content layouts
-- immersive scrolling experience
+This project is licensed under the MIT License.
 
----
-
-## Author
-
-Ashish Ranjan
-
----
-
-## Follow Me
-
-- GitHub https://github.com/a2rp
-- Portfolio https://www.ashishranjan.net
-- LinkedIn https://www.linkedin.com/in/aashishranjan
-- Facebook https://www.facebook.com/theash.ashish/
-- YouTube https://www.youtube.com/@ashishranjan-ashz
-
----
-
-a2rp - an Ashish Ranjan presentation
+© 2026 Ashish Ranjan
