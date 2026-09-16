@@ -54,7 +54,7 @@ const Footer = () => {
                             <a
                                 href="https://www.ashishranjan.net"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 Portfolio
                                 <FiArrowUpRight />
@@ -63,7 +63,7 @@ const Footer = () => {
                             <a
                                 href="https://github.com/a2rp"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 GitHub
                                 <FiGithub />
@@ -72,7 +72,7 @@ const Footer = () => {
                             <a
                                 href="https://codepen.io/ash1198"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 CodePen
                                 <FiArrowUpRight />
@@ -81,7 +81,7 @@ const Footer = () => {
                             <a
                                 href="https://www.linkedin.com/in/aashishranjan"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 LinkedIn
                                 <FiLinkedin />
@@ -94,7 +94,7 @@ const Footer = () => {
                             <a
                                 href="https://www.facebook.com/theash.ashish/"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 Facebook
                                 <FiFacebook />
@@ -103,7 +103,7 @@ const Footer = () => {
                             <a
                                 href="https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 YouTube
                                 <FiYoutube />
@@ -150,8 +150,7 @@ const Footer = () => {
 
                 <div className="footerBottom">
                     <span>
-                        © {new Date().getFullYear()} Drishti Foundation. All
-                        rights reserved.
+                        Copyright &copy; {new Date().getFullYear()} Drishti Foundation.
                     </span>
 
                     <span>
@@ -159,7 +158,7 @@ const Footer = () => {
                         <a
                             href="https://www.ashishranjan.net"
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                         >
                             Ashish Ranjan
                         </a>
