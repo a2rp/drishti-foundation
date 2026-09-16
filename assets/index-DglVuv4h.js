@@ -1,4 +1,4 @@
-import{c as r,j as e,b as o,x as l,L as s,F as n,y as c,a}from"./index-BBIEQPxq.js";const p={Wrapper:r.div`
+import{c as r,j as e,b as o,x as l,L as s,F as n,y as c,a}from"./index-HEHYy96m.js";const p={Wrapper:r.div`
         width: 100%;
         background: #f7f4ee;
         color: #111111;
