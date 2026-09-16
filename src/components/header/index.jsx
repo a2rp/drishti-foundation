@@ -123,10 +123,6 @@ const Header = () => {
     };
 
     useEffect(() => {
-        setIsMenuOpen(false);
-    }, [pathname]);
-
-    useEffect(() => {
         const handleEscape = (event) => {
             if (event.key === "Escape") {
                 setIsMenuOpen(false);
