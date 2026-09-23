@@ -83,6 +83,36 @@ export const Styled = {
             align-self: end;
         }
 
+        .iconLinks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            max-width: 280px;
+        }
+
+        .iconLinks a {
+            width: 34px;
+            height: 34px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 9px;
+            color: #b7b7b7;
+            transition: color 0.2s ease, border-color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .iconLinks a:hover {
+            color: #ffffff;
+            border-color: #ef2b2d;
+            box-shadow: 0 8px 18px rgba(239, 43, 45, 0.2);
+        }
+
+        .iconLinks svg {
+            width: 15px;
+            height: 15px;
+        }
+
         .linkGroup {
             display: flex;
             flex-direction: column;

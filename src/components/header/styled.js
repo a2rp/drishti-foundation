@@ -40,11 +40,17 @@ export const Styled = {
         width: 42px;
         height: 46px;
         position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px;
+        display: grid;
+        place-items: center;
         flex-shrink: 0;
+        overflow: hidden;
+        border-radius: 8px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
 
         span {
             display: block;

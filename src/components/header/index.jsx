@@ -12,6 +12,8 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 
 import { Styled } from "./styled";
 
+const logo = `${import.meta.env.BASE_URL}logo.png`;
+
 const headerNavItems = [
     {
         id: 1,
@@ -179,10 +181,7 @@ const Header = () => {
                 <Styled.Inner>
                     <Styled.Brand as={Link} to="/">
                         <Styled.BrandMark aria-hidden="true">
-                            <i />
-                            <span className="span1" />
-                            <span className="span2" />
-                            <span className="span3" />
+                            <img src={logo} alt="Drishti Foundation logo" />
                         </Styled.BrandMark>
 
                         <Styled.BrandText>
