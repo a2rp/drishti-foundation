@@ -1,4 +1,4 @@
-import{c as i,j as e,h as n,a as t,i as a,k as s,l as o,m as r,n as c,o as l,p as d}from"./index-Cxkn0fwf.js";const p={Wrapper:i.div`
+import{c as i,j as e,h as n,a as t,i as a,k as s,l as o,m as r,n as c,o as l,p as d}from"./index-CJQkaztW.js";const p={Wrapper:i.div`
         width: 100%;
         background: #f7f4ee;
         color: #111111;
