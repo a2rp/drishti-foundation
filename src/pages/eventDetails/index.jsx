@@ -8,6 +8,7 @@ import {
 } from "react-icons/fi";
 import { Link, useParams } from "react-router-dom";
 
+import NotFound from "../notFound";
 import { Styled } from "./styled";
 
 const events = {
@@ -59,7 +60,11 @@ const events = {
 const EventDetails = () => {
     const { eventSlug } = useParams();
 
-    const event = events[eventSlug] || events["community-learning-session"];
+    const event = events[eventSlug];
+
+    if (!event) {
+        return <NotFound />;
+    }
 
     return (
         <Styled.Wrapper>

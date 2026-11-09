@@ -8,6 +8,7 @@ import {
 } from "react-icons/fi";
 import { Link, useParams } from "react-router-dom";
 
+import NotFound from "../notFound";
 import { Styled } from "./styled";
 
 const publications = {
@@ -93,8 +94,11 @@ const publications = {
 const PublicationDetails = () => {
     const { publicationSlug } = useParams();
 
-    const publication =
-        publications[publicationSlug] || publications["community-perspectives"];
+    const publication = publications[publicationSlug];
+
+    if (!publication) {
+        return <NotFound />;
+    }
 
     return (
         <Styled.Wrapper>

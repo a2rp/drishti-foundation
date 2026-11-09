@@ -35,8 +35,8 @@ const headerNavItems = [
     },
     {
         id: 4,
-        label: "Summit",
-        to: "/events/drishti-summit-2025",
+        label: "Events",
+        to: "/events",
         matchPaths: ["/events"],
     },
 ];
@@ -80,9 +80,9 @@ const drawerNavItems = [
         matchPaths: ["/opportunities"],
     },
     {
-        id: 6,
-        label: "Summit",
-        to: "/events/drishti-summit-2025",
+        id: 7,
+        label: "Events",
+        to: "/events",
         matchPaths: ["/events"],
     },
     {
@@ -92,7 +92,7 @@ const drawerNavItems = [
         matchPaths: ["/legal"],
     },
     {
-        id: 7,
+        id: 9,
         label: "Contact",
         to: "/contact",
         matchPaths: ["/contact"],

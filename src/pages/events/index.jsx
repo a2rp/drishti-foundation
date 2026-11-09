@@ -125,7 +125,7 @@ const Events = () => {
 
             <section className="eventsSection">
                 <div className="sectionHeader">
-                    <span>UPCOMING EVENTS</span>
+                    <span>COMMUNITY EVENTS</span>
                     <strong>{events.length} Events</strong>
                 </div>
 

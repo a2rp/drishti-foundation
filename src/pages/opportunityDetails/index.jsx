@@ -8,6 +8,7 @@ import {
 } from "react-icons/fi";
 import { Link, useParams } from "react-router-dom";
 
+import NotFound from "../notFound";
 import { Styled } from "./styled";
 
 const opportunities = {
@@ -55,8 +56,11 @@ const opportunities = {
 const OpportunityDetails = () => {
     const { opportunitySlug } = useParams();
 
-    const opportunity =
-        opportunities[opportunitySlug] || opportunities["community-volunteer"];
+    const opportunity = opportunities[opportunitySlug];
+
+    if (!opportunity) {
+        return <NotFound />;
+    }
 
     return (
         <Styled.Wrapper>

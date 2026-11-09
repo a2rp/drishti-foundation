@@ -2,6 +2,8 @@
 
 A responsive React foundation website for education, awareness, community participation, opportunities, events, publications, and social impact work.
 
+This is a static front-end concept. Stories, event dates, opportunities, publications, and legal copy are sample content; the site does not represent an operating foundation or provide a backend service. The contact form opens an email app.
+
 ![Drishti Foundation screenshot](screenshot.png)
 
 ## Features

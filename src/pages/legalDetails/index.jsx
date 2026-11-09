@@ -1,6 +1,7 @@
 import { FiArrowLeft, FiArrowRight, FiFileText } from "react-icons/fi";
 import { Link, useParams } from "react-router-dom";
 
+import NotFound from "../notFound";
 import { Styled } from "./styled";
 
 const legalDocuments = {
@@ -29,8 +30,11 @@ const legalDocuments = {
 const LegalDetails = () => {
     const { legalSlug } = useParams();
 
-    const document =
-        legalDocuments[legalSlug] || legalDocuments["privacy-policy"];
+    const document = legalDocuments[legalSlug];
+
+    if (!document) {
+        return <NotFound />;
+    }
 
     return (
         <Styled.Wrapper>

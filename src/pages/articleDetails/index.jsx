@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
     FiArrowLeft,
     FiArrowRight,
@@ -8,6 +9,7 @@ import {
 } from "react-icons/fi";
 import { Link, useParams } from "react-router-dom";
 
+import NotFound from "../notFound";
 import { Styled } from "./styled";
 
 const articles = {
@@ -68,8 +70,36 @@ const articles = {
 
 const ArticleDetails = () => {
     const { articleSlug } = useParams();
+    const [shareMessage, setShareMessage] = useState("");
 
-    const article = articles[articleSlug] || articles["access-to-knowledge"];
+    const article = articles[articleSlug];
+
+    if (!article) {
+        return <NotFound />;
+    }
+
+    const shareArticle = async () => {
+        const shareData = {
+            title: article.title,
+            text: article.intro,
+            url: window.location.href,
+        };
+
+        try {
+            if (navigator.share) {
+                await navigator.share(shareData);
+            } else if (navigator.clipboard?.writeText) {
+                await navigator.clipboard.writeText(shareData.url);
+                setShareMessage("Story link copied.");
+            } else {
+                setShareMessage("Copy this page URL to share the story.");
+            }
+        } catch (error) {
+            if (error?.name !== "AbortError") {
+                setShareMessage("Could not share. Copy this page URL instead.");
+            }
+        }
+    };
 
     return (
         <Styled.Wrapper>
@@ -110,12 +140,16 @@ const ArticleDetails = () => {
                     <span>SHARE STORY</span>
 
                     <div className="shareButtons">
-                        <button type="button" aria-label="Share article">
+                        <button
+                            type="button"
+                            aria-label="Share this story"
+                            onClick={shareArticle}
+                        >
                             <FiShare2 />
                         </button>
 
                         <a
-                            href="https://www.linkedin.com"
+                            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`}
                             target="_blank"
                             rel="noreferrer"
                             aria-label="LinkedIn"
@@ -124,7 +158,7 @@ const ArticleDetails = () => {
                         </a>
 
                         <a
-                            href="https://www.facebook.com"
+                            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
                             target="_blank"
                             rel="noreferrer"
                             aria-label="Facebook"
@@ -132,6 +166,14 @@ const ArticleDetails = () => {
                             <FiFacebook />
                         </a>
                     </div>
+
+                    <span
+                        className="shareStatus"
+                        role="status"
+                        aria-live="polite"
+                    >
+                        {shareMessage}
+                    </span>
                 </aside>
 
                 <article className="articleContent">

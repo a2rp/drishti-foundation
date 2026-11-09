@@ -163,6 +163,22 @@ export const Styled = {
             color: #ffffff;
         }
 
+        .shareStatus {
+            display: block;
+            min-height: 1.2em;
+            margin-top: 10px;
+            color: #77736c;
+            font-size: 0.75rem;
+        }
+
+        .articleAside > .shareStatus {
+            font-family: inherit;
+            font-size: 0.75rem;
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
         .articleContent {
             min-width: 0;
         }

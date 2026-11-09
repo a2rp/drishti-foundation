@@ -8,6 +8,7 @@ import {
 } from "react-icons/fi";
 import { Link, useParams } from "react-router-dom";
 
+import NotFound from "../notFound";
 import { Styled } from "./styled";
 
 const workAreas = {
@@ -131,7 +132,11 @@ const workAreas = {
 const WorkDetails = () => {
     const { workSlug } = useParams();
 
-    const work = workAreas[workSlug] || workAreas.education;
+    const work = workAreas[workSlug];
+
+    if (!work) {
+        return <NotFound />;
+    }
 
     return (
         <Styled.Wrapper>
